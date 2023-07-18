@@ -1,4 +1,4 @@
-const heroesUrl = `https://gateway.marvel.com:443/v1/public/characters?limit=99&apikey=${import.meta.env.VITE_PUBLIC_KEY}&ts=${import.meta.env.VITE_TS}&hash=${import.meta.env.VITE_HASH}`;
+const heroesUrl = `https://gateway.marvel.com:443/v1/public/characters?limit=50&apikey=${import.meta.env.VITE_PUBLIC_KEY}&ts=${import.meta.env.VITE_TS}&hash=${import.meta.env.VITE_HASH}`;
 const comicsUrl = `https://gateway.marvel.com:443/v1/public/comics?apikey=${import.meta.env.VITE_PUBLIC_KEY}&ts=${import.meta.env.VITE_TS}&hash=${import.meta.env.VITE_HASH}`;
 
 export const getHeroes = async () => {
