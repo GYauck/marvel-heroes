@@ -15,8 +15,8 @@ export const HeroCard = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 250px;
-    height: 250px;
+    width: ${props => props.$randomHero ? "500px" : "350px"};
+    height: ${props => props.$randomHero ? "500px" : "350px"};
     border-radius: 10px;
     background-color: #5c3920;
 `
@@ -26,8 +26,8 @@ export const HeroStar = styled(FontAwesomeIcon)`
 `
 
 export const HeroImg = styled.img`
-width: 150px;
-height: 150px;
+width: ${props => props.$randomHero ? "350px" : "200px"};
+height: ${props => props.$randomHero ? "350px" : "200px"};
 border-radius: 8px;
 `
 export const HeroName = styled.h1`
