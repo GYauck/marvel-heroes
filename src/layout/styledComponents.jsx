@@ -13,6 +13,12 @@ export const NavContainer = styled.div`
   background-color: white;
   
 `
+export const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+`
 export const StyledLogo = styled.img`
   width: 100px;
   height: 40px;
