@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { getHeroes } from "../../../api/fetchData";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
+import { HeroesContext } from "../../context/heroesContext";
 
 import {
   CardsContainer,
@@ -11,7 +12,7 @@ import {
 } from "./styledComponents";
 
 const Home = () => {
-  const [heroes, setHeroes] = useState([]);
+  const { heroes, setHeroes } = useContext(HeroesContext);
 
   const fetchHeroes = async () => {
     try {
