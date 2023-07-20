@@ -21,7 +21,8 @@ export const HeroCard = styled.div`
     background-color: #5c3920;
 `
 export const HeroStar = styled(FontAwesomeIcon)`
-    right: 0;
+    width: 25px;
+    height: 50px;
     margin-left: 200px;
 `
 

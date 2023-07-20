@@ -16,13 +16,10 @@ const SearchBar = () => {
     const searchData = async (e) => {
         e.preventDefault()
         try {
-            const heroesUrl = `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${query}&limit=10&apikey=${import.meta.env.VITE_PUBLIC_KEY}&ts=${import.meta.env.VITE_TS}&hash=${import.meta.env.VITE_HASH}`;
+            const heroesUrl = `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${query}&limit=90&apikey=${import.meta.env.VITE_PUBLIC_KEY}&ts=${import.meta.env.VITE_TS}&hash=${import.meta.env.VITE_HASH}`;
             const res = await fetch(heroesUrl)
             const data = await res.json()
-            
             setHeroes(data.data.results)
-            console.log(query)
-            console.log("asdasd",data.data)
             setQuery("")
         } catch (error) {
             console.log(error)
